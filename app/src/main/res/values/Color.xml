@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bulletin_primary">#1a934c</color>
+    <color name="bulletin_secondary">#196830</color>
+    <color name="bulletin_secondar">#175329</color>
+    <color name="tab_page_indicator">#fff</color>
+    <color name="light_green">#1BAC61</color>
+</resources>

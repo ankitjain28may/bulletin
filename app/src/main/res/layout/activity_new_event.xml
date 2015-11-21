@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.droidbots.bulletin.NewEvent">
+
+    <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shadow_item_container"
+        style="@style/ms9_DefaultShadowStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms9_affectsDisplayedPosition="true"
+        app:ms9_forceUseCompatShadow="true"
+        app:ms9_shadowElevation="4dp"
+        app:ms9_shadowTranslationZ="2dp"
+        app:ms9_useAmbientShadow="true"
+        app:ms9_useSpotShadow="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/bulletin_secondary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+                />
+
+        </android.support.design.widget.AppBarLayout>
+    </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Select the type of Event"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:id="@+id/eventType"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.rey.material.widget.EditText
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/name"
+            android:inputType="textEmailAddress"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:et_labelEnable="true"
+            android:hint="Event Name"
+            android:textSize="16dp"
+            app:et_labelTextSize="14dp"
+            app:et_dividerColor="#999"
+
+             />
+
+        <com.rey.material.widget.EditText
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/venue"
+            android:inputType="textEmailAddress"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:et_labelEnable="true"
+            android:hint="Venue"
+            android:textSize="16dp"
+            app:et_labelTextSize="14dp"
+            app:et_dividerColor="#999"
+
+            />
+
+
+        <com.rey.material.widget.EditText
+            fontPath="fonts/OpenSans-Semibold.ttf"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/date"
+            android:inputType="textEmailAddress"
+            style="@style/Material.Widget.EditText.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:et_labelEnable="true"
+            android:hint="Date"
+            android:textSize="16dp"
+            app:et_labelTextSize="14dp"
+            app:et_dividerColor="#999"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
